@@ -1,0 +1,407 @@
+
+/*==========================================
+ VIOLETSKY CSS Bootstrap based
+==========================================*/
+
+/*by @behrmart aka Tu Padre Y GABCA*/
+
+/* VIOLETSKY Base Colors SAFE WEB COLORS
+Morado: #4C2F60
+Lila: #6F4C8A
+Lila claro: #9B85BE
+*/
+
+@import "bootstrap";
+
+/* -------------------- VIOLETSKY Font faces --------------------------*/
+
+@font-face {
+  font-family: "NeoSansStdRegular";
+  src: url("../fonts/NeoSansStdRegular.otf");
+  }
+
+@font-face {
+  font-family: "NeoSansStdLight";
+  src: url("../fonts/NeoSansStdLight.otf");
+  }
+
+@font-face {
+  font-family: "NeoSansStdBold";
+  src: url("../fonts/NeoSansStdBold.otf");
+  }
+
+ @font-face {
+  font-family: "RockwellRegular";
+  src: url("../fonts/RockwellBQ-Regular.otf");
+  }
+
+/* 
+-------------------- 
+HTML doc & Body 
+--------------------
+*/
+
+html, body {
+	height: 100%;
+	width: 100%;
+	font-family: 'NeoSansStdRegular';
+	color: #4C2F60;
+	}
+
+.boldfont {
+	font-family: "NeoSansStdBold";
+}
+
+.moradobg {
+	background-color: #4C2F60;
+	border-color: #9B85BE;
+}
+
+.moradogb:hover {
+	background-color: #9B85BE;
+}
+
+.whitetext {
+	color: #fff;
+}
+
+a {
+	color: #4C2F60 /*so link doesnt appear blue on mobile*/
+}
+
+a:hover {
+	color: #9B85BE;
+}
+
+
+
+/* 
+-------------------- 
+Bootstrap Navbar
+--------------------
+*/
+
+.navbar {
+	padding: .3rem;
+	background-color: #fff; 
+}
+
+.navbar-brand > img{    /* Added by me BFMM to fix logo on navbar */
+	width: 250px;
+	height: auto;
+}
+
+.navbar-nav li {
+	padding-right: 20px;
+}
+
+.nav-link {
+	font-size: 1rem !important;
+	color: #4C2F60;
+}
+
+
+/* 
+-------------------- 
+VIOLETASKY Hero
+--------------------
+*/
+
+.violetskyhero {
+	background-image: linear-gradient(to right, rgba(255,255,255,0) 10%, rgba(255,255,255,0), rgba(255,255,255,0)), url("../img/bckgd1.jpg");
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	position: relative;
+  	color: #fff;
+}
+
+/* 
+-------------------- 
+SELLOVIOLETA Hero
+--------------------
+*/
+
+.sellovioletahero {
+	background-image: linear-gradient(to right, rgba(255,255,255,0) 10%, rgba(255,255,255,0), rgba(255,255,255,0)), url("../img/bckgd2_2.jpg");
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	position: relative;
+  	color: #fff;
+}
+
+.violetabkg {
+	background-color: #4C2F60;
+	color: #fff;
+}
+
+
+/* 
+-------------------- 
+Who we are
+--------------------
+*/
+
+.whoweare {
+	background-color: #E9D9FF; 
+	border-radius: 10px 100px 100px 10px;
+	color: #4C2F60;
+}
+
+/* 
+-------------------- 
+What we offer
+--------------------
+*/
+
+.whatweoffer {
+	background-color: #D9C1DE;
+	border-radius: 10px 100px 100px 10px; 
+	color: #4C2F60;
+}
+
+/* 
+-------------------- 
+About us
+--------------------
+*/
+
+.aboutus {
+	background-image: linear-gradient(to right, rgba(255,255,255,0) 10%, rgba(255,255,255,0), rgba(255,255,255,0)), url("../img/backgd_blanco.jpg");
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	position: relative;
+}
+
+
+.moreinfo {
+	background-color: #E9D9FF;
+	border-radius: 30px 30px 30px 30px;
+}
+
+
+/* 
+-------------------- 
+PETRI
+--------------------
+*/
+
+.petrilogo {
+	background-color: #fff; 
+}
+
+.petriverde {
+	font-family: 'RockwellRegular';
+	background-color: #8bc53f;
+	color: #000;
+}
+
+
+/* 
+-------------------- 
+Bootstrap Buttons
+--------------------
+*/
+
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #4C2F60 !important;
+    border-color: #9B85BE !important;
+}
+
+
+/* 
+-------------------- 
+FOOTER
+--------------------
+*/
+
+footer{
+	background-color: #4C2F60;
+	color: #fff;
+}
+
+
+footer a {
+	color: #6F4C8A; /*so link doesnt appear blue on mobile*/
+}
+
+footer a:hover {
+	color: #fff;
+}
+
+.menufooter1 {
+	color: #fff;
+}
+
+.menufooter2 {
+	color: #fff;
+}
+
+.menufooter3 {
+	color: #fff;
+}
+
+hr.light{
+	border-top: 1px solid #d5d5d5;
+	width: 75%;
+	margin-top: .8rem;
+	margin-bottom: 1rem;
+}
+
+hr.light-100{
+	border-top: 1px solid #d5d5d5;
+	width: 100%;
+	margin-top: .8rem;
+	margin-bottom: 1rem;
+}
+
+.footerfooter {
+	color: #fff;
+	font-size: .2rem;
+}
+
+
+
+
+
+/*-----------------------------------------------------------------------------
+Media Queries 
+-------------------------------------------------------------------------------*/
+
+/* 
+-------------------- 
+LARGE
+--------------------
+*/
+@media (max-width: 992px) {
+
+	html, body {
+	font-size: large;
+	}
+  }
+
+@media (max-width: 800px) {	          /* ----------kindle fire HDX* --------------*/
+  	.carouselprev1 {
+  		width:70%;
+  	}
+}
+ 
+/* 
+-------------------- 
+MEDIUM
+--------------------
+*/  
+@media (max-width: 768px) {    /*--------------- iPad -----------------------*/
+
+	
+	.menufooter1 {
+		text-align: center;
+	}
+
+	.menufooter2 {
+		text-align: center;
+	}	
+
+	.menufooter3 {
+		text-align: center;
+	}
+	
+}
+
+/* 
+-------------------- 
+SMALL
+--------------------
+*/
+
+@media (max-width: 576px) { /*--------------- iPhone -----------------------*/
+  
+	
+	.menufooter1 {
+		text-align: center;
+	}
+
+	.menufooter2 {
+		text-align: center;
+	}	
+
+	.menufooter3 {
+		text-align: center;
+	}
+
+
+}
+
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0 !important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#fixed {
+  background-image: url('img/bg1.jpg');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+
+
+
+
+
+
+
